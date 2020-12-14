@@ -2,8 +2,10 @@ trigger:
 - '*'
 
 variables:
-webRepository: 'web'
-  tag: '$(Build.BuildId)'
+name: 'webRepository'
+value: 'web'
+name: 'tag'
+value: '$(Build.BuildId)'
 
 stages:
 - stage: 'Build'
